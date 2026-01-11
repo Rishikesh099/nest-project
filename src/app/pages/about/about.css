@@ -1,0 +1,22 @@
+img{
+    border-radius: 20px;
+}
+.row{
+    margin-top: 60px;
+}
+
+p{
+    font-style: italic;font-size: large;
+}
+h1{
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

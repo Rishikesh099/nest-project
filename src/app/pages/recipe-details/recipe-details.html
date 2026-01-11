@@ -1,0 +1,61 @@
+
+<!-- <div class="container text-center" style="margin-top: 50px;margin-bottom: 50px;">
+  <div class="row">
+    <div class="col">
+      <img src="{{recipe?.image}}" class="img-fluid" alt="...">
+    </div>
+    <div class="col" style="text-align: left;">
+      <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">{{recipe?.title}}</h1>
+      <h6>Category:</h6>
+      <h3 style="font-family: fantasy;">price : {{recipe?.price}}</h3>
+      <h5>Rating:5.5()</h5>
+      <p style="font-family: cursive;">{{recipe?.description}}</p>
+      <div class="contain" style="gap: 10px;display: flex;">
+        <button class="btn btn-primary">Add to cart</button>
+
+        <button class="btn btn-primary">buy</button>
+      </div>  
+    </div>
+  </div>
+</div> -->
+
+<h1 style="font-style: oblique;margin-bottom: 50px;text-align: center ;">{{recipe.name}}</h1>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <p class="leftside">Cuisine: {{recipe.cuisine}}</p>
+      <p class="leftside">Type: {{recipe.tags}}</p>
+      <p class="leftside">Difficulty: {{recipe.difficulty}}</p>
+      <p class="leftside">Servings: {{recipe.servings}}</p>
+      <p class="leftside">Calories: {{recipe.caloriesPerServing}}</p>
+      <p class="leftside">Prep Time: {{recipe.prepTimeMinutes}} minutes</p>
+      <p class="leftside">Cook Time: {{recipe.cookTimeMinutes}} minutes</p>
+      <p class="leftside">Rating : {{recipe.rating}} ({{recipe.reviewCount}} reviews)</p>
+      <p class="leftside">Meal Type: {{recipe.mealType}}</p>
+    </div>
+    <div class="col-5">
+      <img src="{{recipe.image}}" class="img-fluid" alt="...">
+    </div>
+    <div class="col">
+      <h3>Ingredients</h3>
+      @for (item of recipe.ingredients; track $index) {
+      <p class="rightside"> ● {{item}}</p>
+      }
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col-7">
+      <h3 style="font-style: italic; margin-top: 35px;">Instructions</h3>
+      @for (item of recipe.instructions; track $index) {
+      <p class="instr">Step {{ $index + 1 }}. {{item}}</p>
+      }
+  </div>
+    <div class="col">
+      
+    </div>
+  </div>
+</div>

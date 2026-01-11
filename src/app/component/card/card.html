@@ -1,0 +1,23 @@
+<div class="container text-center" style="font-family: 'Playfair Display', serif;">
+    @for (item of c; track $index) {}
+  <div class="row" style="margin-top: 20px;">
+        @for (item of cards; track $index) {
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+  <img src="{{item.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <p class="card-text">Cuisine : {{item.cuisine}}</p>
+    <p class="card-text">Type : {{item.tags}}</p>
+    <button class="btn btn-primary" (click)="viewrecipedetails(item)">Details</button>
+  </div>
+</div>
+      
+    </div>
+    
+}
+  </div>
+  
+</div>
+
+

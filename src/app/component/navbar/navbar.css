@@ -1,0 +1,25 @@
+.navbar{
+    
+    
+    background-image: url(https://t3.ftcdn.net/jpg/05/17/54/92/360_F_517549233_fjVR9Kt1GlQqtvsGjb1ThVZAwa3gUviE.jpg);
+    /* https://thumbs.dreamstime.com/b/healthy-breakfast-food-banner-bottom-border-table-scene-fruit-yogurt-smoothie-bowl-nutritious-toasts-cereal-egg-169539283.jpg */
+    background-size: contain;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-position: center;
+    /* transform: scaleY(-1); */
+    
+    
+    
+}
+.nav-link{
+    color: white;
+}
+
+li{
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+
